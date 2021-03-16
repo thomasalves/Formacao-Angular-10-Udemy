@@ -1,0 +1,9 @@
+.card-body{
+    display: flex;
+    justify-content: center;
+   
+}
+
+select, input{
+    margin-right: 10px;
+}

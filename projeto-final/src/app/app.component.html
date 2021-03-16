@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Projeto Final</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+   aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Inicial</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" 
+        aria-haspopup="true" aria-expanded="false">
+          Projetos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" [routerLink]="['/dashboard']">Dashboard</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['/calculadora']">Calculadora</a>
+          <a class="dropdown-item" [routerLink]="['/conversor-moedas']">Conversor de moedas</a>
+          <a class="dropdown-item"[routerLink]="['/tarefas']">Gerenciador de tarefas</a>
+          <a class="dropdown-item" [routerLink]="['/jogo-da-velha']">Jogo da velha</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
